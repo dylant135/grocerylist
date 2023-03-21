@@ -33,7 +33,7 @@ export default function AddItem({setList}: FormProps) {
         })
         setFormData({
             itemName: '',
-            amount: 0
+            amount: 1
         })
     }
 
@@ -41,17 +41,21 @@ export default function AddItem({setList}: FormProps) {
         <form onSubmit={handleSubmit}>
             <input
                 type='text'
+                required
+                placeholder="Item Name"
                 value={formData.itemName}
                 name='itemName'
                 onChange={handleChange}
             />
+            <label htmlFor="amount">Number of Items: </label>
             <input
                 type='number'
+                min='1'
                 value={formData.amount}
                 name='amount'
                 onChange={handleChange}
             />
-            <button>Submit</button>
+            <button className="submitbtn">Add</button>
         </form>
     )
 }

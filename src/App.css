@@ -2,3 +2,58 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #c4d7dd;
+  padding-bottom: 10px;
+}
+
+form {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+form > * {
+  padding: 5px;
+  margin: 7px;
+  font-size: 1.2em;
+}
+
+.submitbtn {
+  background-color: #2596be;
+}
+
+.submitbtn:hover {
+  background-color: #145369;
+  cursor: pointer;
+}
+
+.list {
+  width: 50vw;
+  margin: auto;
+  padding: 5px;
+  background-color: #c4cdd1;
+  border: 1px solid black;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5px;
+  font-size: 1.2em;
+  font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.deletebtn {
+  background-color: #e81021;
+}
+
+.deletebtn:hover {
+  background-color: #3e0409;
+  color: white;
+  cursor: pointer;
+}
